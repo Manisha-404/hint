@@ -10,6 +10,7 @@ import Search from "./Pages/Search";
 import Know from "./Pages/KnowMore";
 import Liked from "./Pages/EventsLiked";
 import Watch from "./Pages/WatchStreame";
+import Error404 from "./Components/Error404";
 function App() {
   return (
     <BrowserRouter>
@@ -25,6 +26,7 @@ function App() {
         <Route path="/KnowMore" element={<Know/>} />
         <Route path="/Liked" element={<Liked/>} />
         <Route path="/Watch" element={<Watch/>} />
+        <Route path="*" element={<Error404/>} />
       </Routes>
     </BrowserRouter>
   );
