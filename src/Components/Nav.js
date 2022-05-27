@@ -16,7 +16,7 @@ function Nav() {
             <FontAwesomeIcon icon={faFacebookMessenger}size="xl" color='#1F628E' />
             <FontAwesomeIcon icon={faHeart} size="xl" color='#1F628E'/>
           */}
-            <Link className={styles.link} to="/">
+            <Link className={styles.link} to="/hint">
             <li className={styles.rotate} >Home</li>
             </Link>
             <Link className={styles.link} to="/Messages">
