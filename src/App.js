@@ -15,7 +15,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/hint" exact element={<Home/>} />
+        <Route path="https://manisha-404.github.io/hint/" exact element={<Home/>} />
         <Route path="/Login" element={<Login/>} />
         <Route path="/User" element={<User/>}>
           <Route path="EventsSponsered" exact  element={<Es/>} />
