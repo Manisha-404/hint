@@ -1,24 +1,32 @@
-import logo from './logo.svg';
+import { BrowserRouter , Route ,Routes } from "react-router-dom";
+import Home from './Pages/Home';
+import Login from './Components/Login';
+import User from './Pages/User';
+import Es from "./Components/EventsSponsered";
 import './App.css';
-
+import Post from "./Pages/EventPosting";
+import Messages from "./Pages/Messages";
+import Search from "./Pages/Search";
+import Know from "./Pages/KnowMore";
+import Liked from "./Pages/EventsLiked";
+import Watch from "./Pages/WatchStreame";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" exact element={<Home/>} />
+        <Route path="/Login" element={<Login/>} />
+        <Route path="/User" element={<User/>}>
+          <Route path="EventsSponsered" exact  element={<Es/>} />
+        </Route>
+        <Route path="/EventPosting" element={<Post/>} />
+        <Route path="/Messages" element={<Messages/>} />
+        <Route path="/Search" element={<Search/>} />
+        <Route path="/KnowMore" element={<Know/>} />
+        <Route path="/Liked" element={<Liked/>} />
+        <Route path="/Watch" element={<Watch/>} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

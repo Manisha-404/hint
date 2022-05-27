@@ -1,0 +1,23 @@
+.search{
+    margin: 4vh;
+    background-color: #000;
+    padding: 2vh;
+    border-radius: 10px;
+}
+
+.input{
+    margin-left: 1vw;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    font-size: 1vw;
+    border-bottom: 2px solid #FDFAFA; 
+    min-width: 88vw;
+    max-width: 88vw;
+}
+
+.close{
+    margin-top: 3vh;
+    display: flex;
+    margin-left: 95vw;
+}

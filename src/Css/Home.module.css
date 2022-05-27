@@ -1,0 +1,16 @@
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+.scroll{
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    position:'relative';
+    max-height: 90vh;
+    direction:ltr;
+}
+
+.scroll::-webkit-scrollbar {
+    display: none;
+  }

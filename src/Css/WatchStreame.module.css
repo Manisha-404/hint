@@ -1,0 +1,22 @@
+.div{
+    margin: 4vw;
+    display: grid;
+    grid-auto-columns: max-content;
+    grid-template-rows: 1fr;
+    width: 91%;
+    overflow-x: auto;    
+}
+
+.card{
+    grid-row: 1;
+    grid-column: auto;
+    margin: 2vh;
+}
+
+.card:hover{
+    transform:  scale(1.1,1.1);
+}
+
+.div::-webkit-scrollbar {
+    display: none;
+}

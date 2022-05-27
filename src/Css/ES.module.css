@@ -1,0 +1,21 @@
+.div{
+background: #000;
+margin-left: 26vw;
+margin-right: 5vh;
+padding-bottom: 2.5vh;
+}
+
+.img{
+    margin: 2.5vw;
+    width: 12vw;
+    height: 23vh;
+    border-radius: 8.36645px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.icon{
+    padding: 10vh;
+    border: 2px dashed #fff ;
+    margin: 2.5vw;
+    cursor: pointer;
+}
