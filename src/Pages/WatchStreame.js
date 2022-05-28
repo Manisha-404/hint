@@ -9,7 +9,7 @@ import styles1 from '../Css/Search.module.css';
 function Watch() {
     return (
       <>
-      <Link className={styles1.link} to="/">
+      <Link className={styles1.link} to="/hint">
         <FontAwesomeIcon className={styles1.close} icon={faCircleXmark} size="xl" color='#FDFAFA'/>
       </Link>
       <div className={styles.div} >

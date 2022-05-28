@@ -7,7 +7,7 @@ function Know() {
     return (
       <>
       hrkko
-      <Link className={styles.link} to="/">
+      <Link className={styles.link} to="/hint">
         <FontAwesomeIcon className={styles.close} icon={faCircleXmark} size="xl" color='#FDFAFA'/>
       </Link>
       </>
