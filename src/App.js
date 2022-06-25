@@ -15,7 +15,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="https://manisha-404.github.io/hint/" exact element={<Home/>} />
+        <Route path="/hint" exact element={<Home/>} />
         <Route path="/Login" element={<Login/>} />
         <Route path="/User" element={<User/>}>
           <Route path="EventsSponsered" exact  element={<Es/>} />
@@ -26,7 +26,7 @@ function App() {
         <Route path="/KnowMore" element={<Know/>} />
         <Route path="/Liked" element={<Liked/>} />
         <Route path="/Watch" element={<Watch/>} />
-        <Route path="*" element={<Error404/>} />
+        <Route path="*" element={<Home/>} />
       </Routes>
     </BrowserRouter>
   );
